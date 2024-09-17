@@ -151,7 +151,9 @@ CVector<T> &CVector<T>::operator=(const CVector &&rhs)
 }
 
 template <typename T>
-void CVector<T>::Release(void) if (nullptr != m_vectorarray) delete[] m_vectorarray;
+void CVector<T>::Release(void)
+{
+if (nullptr != m_vectorarray) delete[] m_vectorarray;
 m_vectorarray = nullptr;
 }
 
