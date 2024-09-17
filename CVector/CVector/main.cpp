@@ -22,48 +22,48 @@ auto main(void) -> int
     main()의 코드는 CVector가 잘 작동하는지 확인하는 Test용 코드입니다.
                                                                 */
 
-    std::cout << "<double> 인스턴스를 만듭니다." << std::endl;
+    std::cout << "<double> 인스턴스를 만듭니다." << "\n";
     CVector<double> vector(4);
 
-    std::cout << "데이터 push_back : " << vector.AddBack(1.1) << std::endl;
-    std::cout << "[0] 번 인덱스의 값 가져오기 : " << vector.GetAt(0) << std::endl;
-    std::cout << "데이터 push_back : " << vector.AddBack(2.1) << std::endl;
-    std::cout << "데이터 push_back : " << vector.AddBack(3.1) << std::endl;
-    std::cout << "데이터 push_back : " << vector.AddBack(4.1) << std::endl;
-    std::cout << "[3] 번 인덱스의 값 가져오기 : " << vector.GetAt(3) << std::endl;
+    std::cout << "데이터 push_back : " << vector.AddBack(1.1) << "\n";
+    std::cout << "[0] 번 인덱스의 값 가져오기 : " << vector.GetAt(0) << "\n";
+    std::cout << "데이터 push_back : " << vector.AddBack(2.1) << "\n";
+    std::cout << "데이터 push_back : " << vector.AddBack(3.1) << "\n";
+    std::cout << "데이터 push_back : " << vector.AddBack(4.1) << "\n";
+    std::cout << "[3] 번 인덱스의 값 가져오기 : " << vector.GetAt(3) << "\n";
 
     // 현재 배열에 알맞지 않은 인덱스에 값을 삽입하면 자동으로 마지막 노드의 다음 인덱스 값으로 조정해서 데이터를 추가합니다.
     vector.Insert(5.1, 7);
-    std::cout << "[7] 번 인덱스에 '5.1' 값을 추가함" << std::endl;
+    std::cout << "[7] 번 인덱스에 '5.1' 값을 추가함" << "\n";
     vector.Delete(3);
-    std::cout << "[3] 번 인덱스의 값을 삭제함" << std::endl;
-    std::cout << "삭제 후 현재 [3] 번 인덱스의 값 가져오기 : " << vector.GetAt(3) << std::endl;
-    std::cout << "현재 Vector의 전체 데이터 출력" << std::endl;
+    std::cout << "[3] 번 인덱스의 값을 삭제함" << "\n";
+    std::cout << "삭제 후 현재 [3] 번 인덱스의 값 가져오기 : " << vector.GetAt(3) << "\n";
+    std::cout << "현재 Vector의 전체 데이터 출력" << "\n";
     vector.PrintAll();
-    std::cout << "vector<double> 배열 요소 갯수 : " << vector.m_arraysize << std::endl;
-    std::cout << std::endl;
-    std::cout << "********************************************************" << std::endl;
-    std::cout << std::endl;
-    std::cout << "<int> 인스턴스를 만듭니다." << std::endl;
+    std::cout << "vector<double> 배열 요소 갯수 : " << vector.m_arraysize << "\n";
+    std::cout << "\n";
+    std::cout << "********************************************************" << "\n";
+    std::cout << "\n";
+    std::cout << "<int> 인스턴스를 만듭니다." << "\n";
     CVector<int> vectorint(8);
-    std::cout << "데이터 push_back : " << vectorint.AddBack(1) << std::endl;
-    std::cout << "[0] 번 인덱스의 값 가져오기 : " << vectorint.GetAt(0) << std::endl;
-    std::cout << "데이터 push_back : " << vectorint.AddBack(2) << std::endl;
-    std::cout << "데이터 push_back : " << vectorint.AddBack(3) << std::endl;
-    std::cout << "데이터 push_back : " << vectorint.AddBack(4) << std::endl;
-    std::cout << "[3] 번 인덱스의 값 가져오기 : " << vectorint.GetAt(3) << std::endl;
+    std::cout << "데이터 push_back : " << vectorint.AddBack(1) << "\n";
+    std::cout << "[0] 번 인덱스의 값 가져오기 : " << vectorint.GetAt(0) << "\n";
+    std::cout << "데이터 push_back : " << vectorint.AddBack(2) << "\n";
+    std::cout << "데이터 push_back : " << vectorint.AddBack(3) << "\n";
+    std::cout << "데이터 push_back : " << vectorint.AddBack(4) << "\n";
+    std::cout << "[3] 번 인덱스의 값 가져오기 : " << vectorint.GetAt(3) << "\n";
     vectorint.Insert(5, 7);
-    std::cout << "[7] 번 인덱스에 '5' 값을 추가함" << std::endl;
-    std::cout << "데이터 push_back : " << vectorint.AddBack(6) << std::endl;
-    std::cout << "데이터 push_back : " << vectorint.AddBack(8) << std::endl;
+    std::cout << "[7] 번 인덱스에 '5' 값을 추가함" << "\n";
+    std::cout << "데이터 push_back : " << vectorint.AddBack(6) << "\n";
+    std::cout << "데이터 push_back : " << vectorint.AddBack(8) << "\n";
     vectorint.Delete(5);
-    std::cout << "[5] 번 인덱스의 값을 삭제함" << std::endl;
-    std::cout << "삭제 후 현재 [5] 번 인덱스의 값 가져오기 : " << vectorint.GetAt(5) << std::endl;
-    std::cout << "현재 Vector의 전체 데이터 출력" << std::endl;
+    std::cout << "[5] 번 인덱스의 값을 삭제함" << "\n";
+    std::cout << "삭제 후 현재 [5] 번 인덱스의 값 가져오기 : " << vectorint.GetAt(5) << "\n";
+    std::cout << "현재 Vector의 전체 데이터 출력" << "\n";
     vectorint.PrintAll();
-    std::cout << "vector<int> 배열 요소 갯수 : " << vectorint.m_arraysize << std::endl;
-    std::cout << "********************************************************" << std::endl;
-    std::cout << "출력을 완료했습니다. 아무 키나 눌러주세요." << std::endl;
+    std::cout << "vector<int> 배열 요소 갯수 : " << vectorint.m_arraysize << "\n";
+    std::cout << "********************************************************" << "\n";
+    std::cout << "출력을 완료했습니다. 아무 키나 눌러주세요." << "\n";
     _getch();
 
     return 0;
