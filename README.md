@@ -1,2 +1,4 @@
 # CVector
-C++ STLì˜ Vectorê°€ ê°€ì§„ ê¸°ëŠ¥ì„ ì§ì ‘ êµ¬í˜„í•œ ì½”ë“œ
+C++ STLÀÇ Vector°¡ °¡Áø ±â´ÉÀ» Á÷Á¢ ±¸ÇöÇÑ ÄÚµåÀÔ´Ï´Ù.
+STL VectorÀÇ ±â´ÉÀ» ¶È°°ÀÌ ±¸ÇöÇÏ´Â °ÍÀÌ ¸ñÀûÀÔ´Ï´Ù.
+ÇÁ·Î±×·¥À» ½ÇÇàÇÏ¸é main() ÇÔ¼ö¿¡ ÀÖ´Â Å×½ºÆ® ÄÚµå¸¦ °ÅÃÄ ÅÍ¹Ì³Î È­¸é¿¡ ÁøÇà »óÈ² ¹× °á°úµéÀ» Ãâ·ÂÇÕ´Ï´Ù.
